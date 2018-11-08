@@ -269,9 +269,6 @@ When you are done, the `pom.xml` file should look like:
                 </executions>
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
-                    <args>
-                        <arg>-Xcoroutines=enable</arg>
-                    </args>
                 </configuration>
             </plugin>
         </plugins>

@@ -63,8 +63,6 @@ plugins {
     kotlin("jvm") version "{{ site.kotlin_version }}"
 }
 
-kotlin.experimental.coroutines = Coroutines.ENABLE
-
 repositories {
     mavenCentral()
     jcenter()

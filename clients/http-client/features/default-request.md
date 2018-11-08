@@ -40,8 +40,8 @@ import io.ktor.client.engine.mock.*
 import io.ktor.client.features.*
 import io.ktor.client.request.*
 import io.ktor.http.*
-import kotlinx.coroutines.experimental.*
-import kotlinx.coroutines.experimental.io.*
+import kotlinx.coroutines.*
+import kotlinx.coroutines.io.*
 
 fun main(args: Array<String>) {
     runBlocking {

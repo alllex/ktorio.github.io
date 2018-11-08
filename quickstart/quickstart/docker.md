@@ -122,8 +122,6 @@ dependencies {
     compile "ch.qos.logback:logback-classic:$logback_version"
 }
 
-kotlin.experimental.coroutines = 'enable'
-
 shadowJar {
     baseName = 'my-application'
     classifier = null
