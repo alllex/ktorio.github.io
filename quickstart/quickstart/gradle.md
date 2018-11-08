@@ -97,9 +97,12 @@ versions, you have to use double-quoted strings.
 
 As for Kotlin 1.2x, coroutines are still an experimental feature, 
 so you will need to tell the compiler that it is okay
-to use them to avoid warnings:
+to use them to avoid warnings. 
+If you are using Kotlin 1.3x or higher, the coroutines are 
+already stable and you can skip this step.
 
 ```groovy
+// Not needed for Kotlin 1.3x or higher
 kotlin {
     experimental {
         coroutines "enable"
@@ -170,12 +173,6 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
-}
-
-kotlin {
-    experimental {
-        coroutines "enable"
-    }
 }
 
 repositories {
